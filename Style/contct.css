@@ -24,8 +24,13 @@ h1 {
 small {
   display: block;
   padding: 1rem 0;
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   transition: opacity 0.33s;
+  margin-top: 5%;
+  margin-left: -30%;
+  color: rgb(240, 81, 2);
+  font-weight: bold;
+  animation: hue 5s infinite;
 }
 textarea,
 input,
