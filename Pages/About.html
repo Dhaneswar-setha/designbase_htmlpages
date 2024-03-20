@@ -1,11 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-  </head>
-  <body>
-    <h1>About</h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Style/style.css">
+  <link rel="stylesheet" href="../Style/contct.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+          <a class="navbar-brand text-white" href="#">
+           <div class="log">Happy Holi</div>
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+   
+      <div class="collapse navbar-collapse" >
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="btn btn-light" href="./index.html">Home <span class="sr-only">undefinedcurrent)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./About.html">About</a>
+            </li>
+           
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+           <small>Enter message (optional) and click button "Send"</small>
+    <div class="wrapper centered">
+      <article class="letter">
+        <div class="side">
+          <h1>Contact us</h1>
+          <p>
+            <textarea placeholder="Your message" required="true"></textarea>
+          </p>
+        </div>
+        <div class="side">
+          <p>
+            <input type="text" placeholder="Your name" required="true" />
+          </p>
+          <p>
+            <input type="email" placeholder="Your email" required="true" />
+          </p>
+          <p>
+            <button id="sendLetter">Send</button>
+          </p>
+        </div>
+      </article>
+      <div class="envelope front"></div>
+      <div class="envelope back"></div>
+    </div>
+    <p class="result-message centered hue" >Thank you for your message</p>
+      </div>
+      </div>
+    </nav>
+
+   
+      <video autoplay loop play-inline muted  >
+          <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+              video is not load
+          </video>
+
+  
+</body>
+<script>
+  function addClass() {
+  document.body.classList.add("sent");
+}
+
+sendLetter.addEventListener("click", addClass);
+</script>
+
 </html>
