@@ -78,6 +78,7 @@ textarea:focus {
 .wrapper {
   width: 35rem;
   background-color: white;
+  margin-top: 90%;
 }
 .letter {
   position: absolute;
@@ -87,10 +88,12 @@ textarea:focus {
   width: 30rem;
   margin: auto;
   perspective: 60rem;
+  margin-top: 20%;
 }
 .side {
   height: 12rem;
   background-color: #fcfcf8;
+
   outline: 1px solid transparent;
   &:nth-of-type(1) {
     padding: 2rem 2rem 0;
@@ -111,6 +114,7 @@ textarea:focus {
   right: 0;
   top: 0;
   margin: auto;
+  margin-top: 20%;
 }
 .envelope.front {
   width: 10rem;
@@ -184,6 +188,16 @@ textarea:focus {
   & .result-message {
     opacity: 1;
     transform: translateY(12rem);
+    margin-top: 10%;
+    font-weight: 900;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* vertical-align: super; */
+    font-size: 200%;
+    color: rgb(240, 81, 2);
+    font-weight: bold;
+    animation: hue 5s infinite;
   }
   & small {
     opacity: 0;
@@ -242,21 +256,8 @@ textarea:focus {
     transform: translateY(-8rem) scale(0.3, 0.5);
   }
 }
-video {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -2;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  filter: blur(100px);
-}
-
-.hue {
-  color: rgb(240, 81, 2);
-  font-weight: bold;
-  animation: hue 5s infinite;
+.result-message {
+  margin-top: 20%;
 }
 
 /*
